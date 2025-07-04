@@ -1,4 +1,4 @@
-// screens/Screen4.tsx
+
 import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, Image, ActivityIndicator } from 'react-native';
 
@@ -23,7 +23,6 @@ export default function Screen4() {
         'https://jritsqmet.github.io/web-api/series.json'
       );
       const json = await response.json();
-      // Cambiamos la fuente de datos a series
       setJuegos(json.series);
     } catch (error) {
       console.error('Error al cargar API:', error);
